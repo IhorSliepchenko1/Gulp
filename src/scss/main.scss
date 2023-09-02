@@ -14,9 +14,21 @@
 // & # ui kit
 @import "components/UI/btn";
 
+// plugins
+// & # ui kit
+@import "plugins/owl.carousel";
+@import "plugins/owl.theme.default";
+@import "plugins/carousel.scss";
+
 // & # base
 @import "components/header";
+@import "components/footer";
+@import "components/common";
 
 // & # section
 @import "section/section-main";
 @import "section/section-services";
+@import "section/section-about";
+@import "section/section-exp";
+@import "section/section-reviews";
+@import "section/section-contacts";
