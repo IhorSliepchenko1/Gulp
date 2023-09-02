@@ -1,0 +1,22 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+// font-family: 'Unica One', cursive;
+// font-family: 'Vollkorn', serif;
+:root {
+  --ff: "Unica One", cursive;
+  --ff-v: "Vollkorn", serif;
+
+  --transition: 0.3s all ease-in-out;
+
+  --body-bg: #1b1c21;
+  --c-text: #d9d9d9;
+  --c-logo: #353535;
+  --c-header-link: #f5f5f5;
+  --c-primary: #f9ce37;
+  --c-border: #777676;
+  --services-bg: #242529;
+}
