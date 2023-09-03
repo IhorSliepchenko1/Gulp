@@ -18,6 +18,13 @@ about.section-services {
   padding: 24px 31px;
   gap: 16px;
   justify-content: center;
+  transition: var(--transition);
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
   &__icon {
     text-align: center;

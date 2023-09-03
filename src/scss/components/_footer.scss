@@ -6,11 +6,10 @@
   padding-bottom: 0;
   padding: 56px 0 56px 0;
 
-
   &__logo {
     text-align: center;
-    color: #fff;
-    font-family: Vollkorn;
+    color: var(--c-white);
+    font-family: var(--ff-v);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -18,8 +17,8 @@
     text-transform: uppercase;
 
     div:last-child {
-      color: #fff;
-      font-family: Unica One;
+      color: var(--c-white);
+      font-family: var(--ff);
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -28,36 +27,42 @@
     }
   }
 
-  &__nav {
-  }
-
-  &__backdrop {
-  }
-
   &__ul {
     display: flex;
     gap: 56px;
     align-items: center;
   }
 
-  &__li {
-  }
-
   &__a {
-    color: #f5f5f5;
-    font-family: Unica One;
+    color: var(--c-header-link);
+    font-family: var(--ff);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-primary);
+    }
   }
 
   &__socials {
     display: flex;
     gap: 16px;
     margin-left: calc(276px - 56px);
+
+    img {
+      &.social-icon {
+        transition: var(--transition);
+
+        &:hover {
+          background: var(--social-hov);
+          border-radius: 50%;
+        }
+      }
+    }
   }
-}
-.container {
 }

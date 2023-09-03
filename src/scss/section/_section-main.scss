@@ -85,6 +85,16 @@
       display: flex;
       align-items: center;
       gap: 60px;
+
+      img {
+        transition: 0.4s all ease-in-out;
+
+        &:hover {
+          -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+          transform: scale(1.4);
+        }
+      }
     }
   }
 
