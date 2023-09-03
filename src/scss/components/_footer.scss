@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding: 56px 0 56px 0;
+
+
+  &__logo {
+    text-align: center;
+    color: #fff;
+    font-family: Vollkorn;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    div:last-child {
+      color: #fff;
+      font-family: Unica One;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: lowercase;
+    }
+  }
+
+  &__nav {
+  }
+
+  &__backdrop {
+  }
+
+  &__ul {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+  }
+
+  &__li {
+  }
+
+  &__a {
+    color: #f5f5f5;
+    font-family: Unica One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+    margin-left: calc(276px - 56px);
+  }
+}
+.container {
+}

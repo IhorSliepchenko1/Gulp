@@ -86,7 +86,7 @@
     line-height: 101px;
     letter-spacing: 2.56px;
     text-transform: capitalize;
-    min-width: 42px;
+    max-width: 42px;
   }
 
   &__text {
@@ -97,6 +97,6 @@
     line-height: 180%;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    width: 533px;
+    max-width: 533px;
   }
 }

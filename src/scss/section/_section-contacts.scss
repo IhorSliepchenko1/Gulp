@@ -1,0 +1,139 @@
+.section-contacts {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background: url("../img/contacts-bg.png") no-repeat center/cover;
+
+
+  &__title {
+    color: #f9ce37;
+    font-family: Unica One;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.3px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+}
+
+.map {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  gap: 74px;
+
+ 
+
+  &__img {
+    padding-left: 34px;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 638px;
+      max-height: 465px;
+    }
+  }
+
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 67px;
+    margin-bottom: 17px;
+  }
+  &__logo {
+    border-radius: 0px 0px 30px 30px;
+    background: var(--c-primary);
+    padding: 35px 18px;
+    position: relative;
+    display: inline-block;
+    color: var(--c-logo);
+    font-family: var(--ff-v);
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    div:last-child {
+      color: var(--c-header-link);
+      font-family: var(--ff);
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: lowercase;
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.contact {
+  &__header {
+    display: inline-flex;
+    align-items: center;
+    gap: 27px;
+    color: var(--c-primary);
+    font-family: var(--ff);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+
+    span {
+      color: var(--c-header-link);
+      font-family: var(--ff);
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 180%;
+      letter-spacing: 2.4px;
+    }
+  }
+
+
+  &__footer {
+    color: var(--c-header-link);
+    font-family: var(--ff);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 40px;
+    letter-spacing: 2.4px;
+  }
+
+  &__desc {
+    color: var(--c-text);
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 19px;
+  }
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 3px;
+
+  &__icon {
+    color: var(--c-primary);
+    font-family: var(--ff);
+    font-family: Unica One;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 1.28px;
+  }
+
+  &__text {
+    color: var(--c-text);
+    font-family: var(--ff);
+    font-family: Unica One;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+}
