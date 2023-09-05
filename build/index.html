@@ -89,14 +89,16 @@
     <div class="section-main__btn">
       <button class="btn btn-solution">
         <span>solutions</span>
-        <img src="img/turn-off.svg" alt="turn-off" />
+        <img src="img/turn-off.svg" alt="turn-off" id="off" />
+        <img src="img/turn-on.svg" alt="turn-on" id="on" />
       </button>
 
       <div class="section-main__line">
         <img src="img/line.png" alt="line" />
       </div>
       <div class="section-main__light">
-        <img src="img/light-off.png" alt="light-off" />
+        <img src="img/light-off.png" alt="light-off" id="light-off" />
+        <img src="img/light-on.png" alt="light-on" id="light-on" />
       </div>
     </div>
 
@@ -140,6 +142,7 @@
     </div>
   </div>
 </section>
+
 
       <section class="section-services">
     <div class="services container">
@@ -2655,6 +2658,41 @@
           "<img src='img/arrow-left.svg' alt='arrow' />",
           "<img src='img/arrow-right.svg' alt='arrow' />",
         ],
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const offImage = document.getElementById("off");
+        const onImage = document.getElementById("on");
+        const button = document.querySelector(".btn-solution");
+        const lampOffImage = document.getElementById("light-off");
+        const lampOnImage = document.getElementById("light-on");
+        const lamp = document.querySelector(".section-main__light");
+
+        const handleMouseOver = (event) => {
+          offImage.style.display = "none";
+          onImage.style.display = "inline";
+
+          if (event.target === button) {
+            lampOffImage.style.display = "none";
+            lampOnImage.style.display = "inline";
+          }
+        };
+
+        const handleMouseOut = (event) => {
+          offImage.style.display = "inline";
+          onImage.style.display = "none";
+
+          if (event.target === button) {
+            lampOffImage.style.display = "inline";
+            lampOnImage.style.display = "none";
+          }
+        };
+
+        button.addEventListener("mouseover", handleMouseOver);
+        button.addEventListener("mouseout", handleMouseOut);
+
+        lamp.addEventListener("mouseover", handleMouseOver);
+        lamp.addEventListener("mouseout", handleMouseOut);
       });
     </script>
   </body>

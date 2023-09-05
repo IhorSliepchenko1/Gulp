@@ -114,3 +114,21 @@
     }
   }
 }
+
+#on,
+#light-on {
+  display: none;
+}
+
+#light-on {
+  position: relative;
+  right: -4px;
+  top: -5px;
+}
+// .btn-solution:hover #off {
+//   display: none;
+// }
+
+// .btn-solution:hover #on {
+//   display: inline;
+// }

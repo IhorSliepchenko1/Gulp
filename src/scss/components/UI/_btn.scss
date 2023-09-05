@@ -40,4 +40,10 @@
   cursor: pointer;
 
   z-index: 1;
+
+  &:hover {
+    border: 1px solid #777676;
+    background: var(--c-primary);
+    box-shadow: 2px 4px 7px 0px rgba(119, 118, 118, 0.42);
+  }
 }
