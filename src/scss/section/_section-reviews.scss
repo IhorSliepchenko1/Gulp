@@ -1,9 +1,41 @@
 .section-reviews {
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee {
+    animation: marquee 10s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .marquee-right {
+    animation: marqueeRight 10s linear infinite;
+  }
+
+  @keyframes marqueeRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   overflow: hidden;
   &__header,
   &__footer {
-    background: var(--reviews-bg);
-    padding: 16px;
+    // background: var(--reviews-bg);
+    // padding: 16px;
     color: var(--c-primary);
     font-family: var(--ff);
     font-size: 53px;
@@ -11,6 +43,7 @@
     letter-spacing: 5.3px;
     text-transform: uppercase;
     white-space: nowrap;
+    width: 100%;
 
     @include tablet {
       font-size: 35px;
@@ -22,10 +55,6 @@
       letter-spacing: 3px;
     }
 
-    span:first-child {
-      margin-left: -60px;
-    }
-
     span:nth-child(even) {
       color: var(--c-header-link);
     }
@@ -34,9 +63,6 @@
   &__footer {
     color: var(--c-header-link);
 
-    span:first-child {
-      margin-left: -15px;
-    }
     span:nth-child(even) {
       color: var(--c-primary);
     }
