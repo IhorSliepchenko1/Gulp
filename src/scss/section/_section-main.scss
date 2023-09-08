@@ -7,13 +7,10 @@
   margin-top: 52px;
   margin-bottom: 110px;
   position: relative;
+
   @include desktop-small {
     flex-direction: column-reverse;
     gap: 70px;
-  }
-
-  @include tablet {
-    overflow: hidden;
   }
 
   &::before {
@@ -21,6 +18,7 @@
     left: 0;
     top: -576px;
     z-index: -1;
+
     @include desktop-small {
       left: 0;
       top: 0;
