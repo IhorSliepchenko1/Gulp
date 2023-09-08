@@ -150,8 +150,12 @@
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 19px;
+    @include tablet {
+      max-width: 500px;
+    }
   }
 }
+
 .contact-item {
   display: flex;
   align-items: center;
