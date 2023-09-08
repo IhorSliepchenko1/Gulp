@@ -5,6 +5,10 @@
   padding-top: 0;
   padding-bottom: 0;
 
+  @include tablet {
+    overflow: hidden;
+  }
+
   &__logo {
     border-radius: 0px 0px 30px 30px;
     background: var(--c-primary);

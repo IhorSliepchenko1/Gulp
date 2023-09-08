@@ -38,8 +38,8 @@
   }
 
   &__text {
-    color: #353535;
-    font-family: Unica One;
+    color: var(--c-logo);
+    font-family: var(--ff);
     font-size: 16px;
     font-weight: 400;
     line-height: 180%;

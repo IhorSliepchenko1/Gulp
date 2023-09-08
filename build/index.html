@@ -201,7 +201,7 @@
 
       <section class="section-services">
   <div class="services container">
-    <div class="services-item slit-in-vertical">
+    <div data-aos="zoom-out-down" class="services-item">
       <div class="services-item__icon">
         <img src="img/services/service-1.png" alt="1" />
       </div>
@@ -209,7 +209,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       </h3>
     </div>
-    <div class="services-item slit-in-vertical">
+    <div data-aos="zoom-out-down" class="services-item">
       <div class="services-item__icon">
         <img src="img/services/service-2.png" alt="2" />
       </div>
@@ -217,7 +217,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       </h3>
     </div>
-    <div class="services-item slit-in-vertical">
+    <div data-aos="zoom-out-down" class="services-item">
       <div class="services-item__icon">
         <img src="img/services/service-3.png" alt="3" />
       </div>
@@ -225,7 +225,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       </h3>
     </div>
-    <div class="services-item slit-in-vertical">
+    <div data-aos="zoom-out-down" class="services-item">
       <div class="services-item__icon">
         <img src="img/services/service-4.png" alt="4" />
       </div>
@@ -315,22 +315,15 @@
 </section>
 
       <section class="section-reviews">
-  <div class="section-reviews__header marquee">
-    <span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span> <span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span> <span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span>
-    <span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span> <span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span> <span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span>
-    <span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span> <span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span> <span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span>
+  <div class="section-reviews__header">
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
   </div>
 
   <div class="container">
@@ -433,22 +426,15 @@
     </div>
   </div>
 
-  <div class="section-reviews__footer marquee-right">
-    <span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span> <span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span> <span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span>
-    <span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span> <span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span> <span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span>
-    <span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span> <span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span
-    ><span>reviews</span> <span>reviews</span><span>reviews</span
-    ><span>reviews</span><span>reviews</span><span>reviews</span>
+  <div class="section-reviews__footer">
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
+    <span class="marquee">reviews </span>
   </div>
 </section>
 
@@ -505,7 +491,7 @@
 </section>
 
       <footer class="footer">
-  <div class="footer-section container">
+  <div class="footer-section container scale-in-center">
     <a href="/" class="footer-section__logo">
       <div>FRONT-END</div>
       <div>developer</div>
@@ -2786,6 +2772,17 @@
           },
         },
       });
+
+      $(function () {
+        $(".marquee").marquee({
+          duration: 4000,
+          startVisible: true,
+          duplicated: true,
+        });
+      });
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
   </body>
 </html>
