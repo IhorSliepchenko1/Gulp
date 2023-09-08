@@ -6,6 +6,14 @@
   padding-bottom: 0;
   margin-top: 52px;
   margin-bottom: 110px;
+  position: relative;
+
+  &::before {
+    @extend .blur;
+    left: 0;
+    top: -576px;
+    z-index: -1;
+  }
 
   &__content {
     max-width: 493px;
@@ -43,6 +51,20 @@
     position: absolute;
     left: -145px;
     top: -313px;
+
+    &-backdrop {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.97);
+      z-index: -1;
+      opacity: 0;
+      transition: var(--transition);
+
+      &._active {
+        opacity: 1;
+      }
+    }
   }
 
   &__skills {
@@ -114,21 +136,3 @@
     }
   }
 }
-
-#on,
-#light-on {
-  display: none;
-}
-
-#light-on {
-  position: relative;
-  right: -4px;
-  top: -5px;
-}
-// .btn-solution:hover #off {
-//   display: none;
-// }
-
-// .btn-solution:hover #on {
-//   display: inline;
-// }

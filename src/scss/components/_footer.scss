@@ -1,66 +1,70 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding: 56px 0 56px 0;
+  border-top: 1px solid var(--c-primary);
 
-  &__logo {
-    text-align: center;
-    color: var(--c-white);
-    font-family: var(--ff-v);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+  .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 56px 0 56px 0;
 
-    div:last-child {
+    &__logo {
+      text-align: center;
       color: var(--c-white);
-      font-family: var(--ff);
-      font-size: 16px;
+      font-family: var(--ff-v);
+      font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      text-transform: lowercase;
+      text-transform: uppercase;
+
+      div:last-child {
+        color: var(--c-white);
+        font-family: var(--ff);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+      }
     }
-  }
 
-  &__ul {
-    display: flex;
-    gap: 56px;
-    align-items: center;
-  }
-
-  &__a {
-    color: var(--c-header-link);
-    font-family: var(--ff);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-
-    transition: var(--transition);
-
-    &:hover {
-      color: var(--c-primary);
+    &__ul {
+      display: flex;
+      gap: 56px;
+      align-items: center;
     }
-  }
 
-  &__socials {
-    display: flex;
-    gap: 16px;
-    margin-left: calc(276px - 56px);
+    &__a {
+      color: var(--c-header-link);
+      font-family: var(--ff);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
 
-    img {
-      &.social-icon {
-        transition: var(--transition);
+      transition: var(--transition);
 
-        &:hover {
-          background: var(--social-hov);
-          border-radius: 50%;
+      &:hover {
+        color: var(--c-primary);
+      }
+    }
+
+    &__socials {
+      display: flex;
+      gap: 16px;
+      margin-left: calc(276px - 56px);
+
+      img {
+        &.social-icon {
+          transition: var(--transition);
+
+          &:hover {
+            background: var(--social-hov);
+            border-radius: 50%;
+          }
         }
       }
     }

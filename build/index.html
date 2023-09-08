@@ -77,7 +77,36 @@
       <div class="cv__btn">
         <button class="btn _primary">
           <span>Download my CV</span>
-          <img src="img/arrow.svg" alt="arrow" />
+
+          <span class="btn__icon">
+            <svg
+              width="25"
+              height="21"
+              viewBox="0 0 25 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_504_30)">
+                <path
+                  d="M13.9257 2.88831L20.9498 10.3592L13.9257 17.8301M1.27783 10.3592H20.7531"
+                  stroke="#F9CE37"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_504_30">
+                  <rect
+                    width="21"
+                    height="25"
+                    fill="white"
+                    transform="matrix(0 -1 1 0 0 21)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
         </button>
       </div>
     </div>
@@ -87,18 +116,38 @@
       Empower your ideas with our innovative
     </div>
     <div class="section-main__btn">
-      <button class="btn btn-solution">
+      <button
+        class="btn btn-solution"
+        id="btnSolution"
+        onclick="switchLight()"
+        onmouseout="switchLight()"
+        onmouseover="switchLight()"
+      >
         <span>solutions</span>
-        <img src="img/turn-off.svg" alt="turn-off" id="off" />
-        <img src="img/turn-on.svg" alt="turn-on" id="on" />
+        <img src="img/turn-off.svg" alt="turn-off" />
       </button>
 
       <div class="section-main__line">
         <img src="img/line.png" alt="line" />
       </div>
       <div class="section-main__light">
-        <img src="img/light-off.png" alt="light-off" id="light-off" />
-        <img src="img/light-on.png" alt="light-on" id="light-on" />
+        <svg
+          id="Lighter"
+          class="section-main__light-backdrop"
+          width="59"
+          height="64"
+          viewBox="0 0 59 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.28402 24.3096C-1.11598 36.7096 12.284 53.4763 19.284 60.3096L21.7841 62.8096H38.2841C39.2841 62.9763 41.2841 62.7096 41.2841 60.3096C63.2841 33.8096 57.2841 28.3096 57.2841 21.3096C50.0841 0.509632 30.6174 -0.357036 21.7841 1.80963C15.9507 4.14296 3.68402 11.9096 1.28402 24.3096Z"
+            fill="#F9CE37"
+            stroke="#F9CE37"
+          />
+        </svg>
+
+        <img src="img/light-off.png" alt="light-off" />
       </div>
     </div>
 
@@ -142,7 +191,6 @@
     </div>
   </div>
 </section>
-
 
       <section class="section-services">
     <div class="services container">
@@ -260,6 +308,8 @@
     <span>reviews</span>
     <span>reviews</span>
     <span>reviews</span>
+    <span>reviews</span>
+    <span>reviews</span>
   </div>
 
   <div class="container">
@@ -279,8 +329,8 @@
               nisi ut.
             </div>
             <div class="review-item__actions">
-              <img src="img/reviews/like.png" alt="like" />
-              <img src="img/reviews/dislike.png" alt="dislike" />
+              <img src="img/reviews/dislike.svg" alt="dislike" />
+              <img src="img/reviews/like.svg" alt="like" />
             </div>
           </div>
         </div>
@@ -298,8 +348,8 @@
               nisi ut.
             </div>
             <div class="review-item__actions">
-              <img src="img/reviews/like.png" alt="like" />
-              <img src="img/reviews/dislike.png" alt="dislike" />
+              <img src="img/reviews/dislike.svg" alt="dislike" />
+              <img src="img/reviews/like.svg" alt="like" />
             </div>
           </div>
         </div>
@@ -318,8 +368,8 @@
               nisi ut.
             </div>
             <div class="review-item__actions">
-              <img src="img/reviews/like.png" alt="like" />
-              <img src="img/reviews/dislike.png" alt="dislike" />
+              <img src="img/reviews/dislike.svg" alt="dislike" />
+              <img src="img/reviews/like.svg" alt="like" />
             </div>
           </div>
         </div>
@@ -337,8 +387,8 @@
               nisi ut.
             </div>
             <div class="review-item__actions">
-              <img src="img/reviews/like.png" alt="like" />
-              <img src="img/reviews/dislike.png" alt="dislike" />
+              <img src="img/reviews/dislike.svg" alt="dislike" />
+              <img src="img/reviews/like.svg" alt="like" />
             </div>
           </div>
         </div>
@@ -347,6 +397,7 @@
   </div>
 
   <div class="section-reviews__footer">
+    <span>reviews</span>
     <span>reviews</span>
     <span>reviews</span>
     <span>reviews</span>
@@ -405,37 +456,38 @@
   </div>
 </section>
 
-      <footer class="footer container">
-    <a href="/" class="footer__logo">
+      <footer class="footer">
+  <div class="footer-section container">
+    <a href="/" class="footer-section__logo">
       <div>FRONT-END</div>
       <div>developer</div>
     </a>
-    <div class="footer__nav">
+    <div class="footer-section__nav">
       <div
-        class="footer__backdrop"
+        class="footer-section__backdrop"
         id="footerBackdrop"
         onclick="navToggle()"
       ></div>
-      <ul class="footer__ul" id="footerUl">
-        <li class="footer__li"><a class="footer__a" href="/">About</a></li>
-        <li class="footer__li">
-          <a class="footer__a" href="/">experience</a>
+      <ul class="footer-section__ul" id="footerUl">
+        <li class="footer-section__li"><a class="footer-section__a" href="/">About</a></li>
+        <li class="footer-section__li">
+          <a class="footer-section__a" href="/">experience</a>
         </li>
-        <li class="footer__li"><a class="footer__a" href="/">reviews</a></li>
-        <li class="footer__li"><a class="footer__a" href="/">contact</a></li>
-  
-        <ul class="footer__socials">
-          <li class="footer__li">
+        <li class="footer-section__li"><a class="footer-section__a" href="/">reviews</a></li>
+        <li class="footer-section__li"><a class="footer-section__a" href="/">contact</a></li>
+
+        <ul class="footer-section__socials">
+          <li class="footer-section__li">
             <a href="/">
               <img class="social-icon" src="img/socials/git.svg" alt="git" />
             </a>
           </li>
-          <li class="footer__li">
+          <li class="footer-section__li">
             <a href="/">
               <img class="social-icon" src="img/socials/ln.svg" alt="ln" />
             </a>
           </li>
-          <li class="footer__li">
+          <li class="footer-section__li">
             <a href="/">
               <img
                 class="social-icon"
@@ -445,10 +497,11 @@
             </a>
           </li>
         </ul>
-  
       </ul>
     </div>
-  </footer>
+  </div>
+</footer>
+
     </div>
 
     <script src="./js/index.bundle.ajs"></script>
@@ -2648,6 +2701,11 @@
         document.getElementById("headerBackdrop").classList.toggle("_active");
       }
 
+      function switchLight() {
+        document.getElementById("Lighter").classList.toggle("_active");
+        document.getElementById("btnSolution").classList.toggle("_active");
+      }
+
       $(".owl-carousel").owlCarousel({
         items: 2,
         lazyLoad: true,
@@ -2658,41 +2716,6 @@
           "<img src='img/arrow-left.svg' alt='arrow' />",
           "<img src='img/arrow-right.svg' alt='arrow' />",
         ],
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const offImage = document.getElementById("off");
-        const onImage = document.getElementById("on");
-        const button = document.querySelector(".btn-solution");
-        const lampOffImage = document.getElementById("light-off");
-        const lampOnImage = document.getElementById("light-on");
-        const lamp = document.querySelector(".section-main__light");
-
-        const handleMouseOver = (event) => {
-          offImage.style.display = "none";
-          onImage.style.display = "inline";
-
-          if (event.target === button) {
-            lampOffImage.style.display = "none";
-            lampOnImage.style.display = "inline";
-          }
-        };
-
-        const handleMouseOut = (event) => {
-          offImage.style.display = "inline";
-          onImage.style.display = "none";
-
-          if (event.target === button) {
-            lampOffImage.style.display = "inline";
-            lampOnImage.style.display = "none";
-          }
-        };
-
-        button.addEventListener("mouseover", handleMouseOver);
-        button.addEventListener("mouseout", handleMouseOut);
-
-        lamp.addEventListener("mouseover", handleMouseOver);
-        lamp.addEventListener("mouseout", handleMouseOut);
       });
     </script>
   </body>

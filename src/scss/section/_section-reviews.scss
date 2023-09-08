@@ -95,6 +95,14 @@
     display: flex;
     justify-content: flex-end;
     gap: 16px;
+    img {
+      cursor: pointer;
+      transition: var(--transition);
+
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
   }
 }
 

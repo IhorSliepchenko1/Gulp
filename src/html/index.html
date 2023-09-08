@@ -2223,6 +2223,11 @@
         document.getElementById("headerBackdrop").classList.toggle("_active");
       }
 
+      function switchLight() {
+        document.getElementById("Lighter").classList.toggle("_active");
+        document.getElementById("btnSolution").classList.toggle("_active");
+      }
+
       $(".owl-carousel").owlCarousel({
         items: 2,
         lazyLoad: true,
@@ -2233,41 +2238,6 @@
           "<img src='img/arrow-left.svg' alt='arrow' />",
           "<img src='img/arrow-right.svg' alt='arrow' />",
         ],
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const offImage = document.getElementById("off");
-        const onImage = document.getElementById("on");
-        const button = document.querySelector(".btn-solution");
-        const lampOffImage = document.getElementById("light-off");
-        const lampOnImage = document.getElementById("light-on");
-        const lamp = document.querySelector(".section-main__light");
-
-        const handleMouseOver = (event) => {
-          offImage.style.display = "none";
-          onImage.style.display = "inline";
-
-          if (event.target === button) {
-            lampOffImage.style.display = "none";
-            lampOnImage.style.display = "inline";
-          }
-        };
-
-        const handleMouseOut = (event) => {
-          offImage.style.display = "inline";
-          onImage.style.display = "none";
-
-          if (event.target === button) {
-            lampOffImage.style.display = "inline";
-            lampOnImage.style.display = "none";
-          }
-        };
-
-        button.addEventListener("mouseover", handleMouseOver);
-        button.addEventListener("mouseout", handleMouseOut);
-
-        lamp.addEventListener("mouseover", handleMouseOver);
-        lamp.addEventListener("mouseout", handleMouseOut);
       });
     </script>
   </body>
