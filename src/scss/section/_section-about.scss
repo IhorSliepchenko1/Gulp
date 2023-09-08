@@ -1,15 +1,29 @@
 .section-about {
   margin-top: 110px;
   margin-bottom: 72px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
+
+  @include tablet-small {
+    margin-top: 60px;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &::before {
     @extend .blur;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
     z-index: -1;
+    @include desktop-small {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__title {
@@ -20,11 +34,20 @@
     letter-spacing: 5.3px;
     text-transform: uppercase;
     margin-bottom: 80px;
+
+    @include tablet-small {
+      margin-bottom: 40px;
+    }
   }
 
   &__row {
     display: flex;
     gap: 40px;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__desc {
@@ -40,14 +63,21 @@
   }
 
   &__img {
-    flex-shrink: 0;
     max-width: 600px;
-
     border-radius: 30px;
+    padding-top: 143px;
 
+    @include tablet {
+      width: 100%;
+      padding: 0;
+    }
     img {
       width: 100%;
+      text-align: end;
       border-radius: 30px;
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 }

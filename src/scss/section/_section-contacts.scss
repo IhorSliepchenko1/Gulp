@@ -3,10 +3,14 @@
   padding-bottom: 110px;
   background: url("../img/contacts-bg.png") no-repeat center/cover;
 
+  @include tablet-small {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 
   &__title {
-    color: #f9ce37;
-    font-family: Unica One;
+    color: var(--c-primary);
+    font-family: var(--ff);
     font-size: 53px;
     font-style: normal;
     font-weight: 400;
@@ -14,6 +18,11 @@
     letter-spacing: 5.3px;
     text-transform: uppercase;
     margin-bottom: 80px;
+
+    @include tablet-small {
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
   }
 }
 
@@ -24,25 +33,46 @@
   display: flex;
   gap: 74px;
 
- 
+  @include desktop-small {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+  }
 
   &__img {
     padding-left: 34px;
     display: flex;
     align-items: center;
 
+    @include desktop-small {
+      padding-left: 0;
+      padding: 10px;
+    }
     img {
       max-width: 638px;
       max-height: 465px;
+      @include tablet-small {
+        max-width: 600px;
+      }
+      @include mobile {
+        max-width: 300px;
+      }
     }
   }
-
 
   &__header {
     display: flex;
     justify-content: flex-end;
     padding-right: 67px;
     margin-bottom: 17px;
+
+    @include tablet-small {
+      justify-content: center;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
   }
   &__logo {
     border-radius: 0px 0px 30px 30px;
@@ -81,6 +111,10 @@
     letter-spacing: 3.2px;
     text-transform: uppercase;
 
+    @include mobile {
+      font-size: 20px;
+    }
+
     span {
       color: var(--c-header-link);
       font-family: var(--ff);
@@ -88,9 +122,12 @@
       font-weight: 400;
       line-height: 180%;
       letter-spacing: 2.4px;
+
+      @include mobile {
+        font-size: 35px;
+      }
     }
   }
-
 
   &__footer {
     color: var(--c-header-link);
@@ -100,6 +137,10 @@
     line-height: 180%;
     margin-bottom: 40px;
     letter-spacing: 2.4px;
+
+    @include mobile {
+      font-size: 35px;
+    }
   }
 
   &__desc {
@@ -125,6 +166,10 @@
     font-weight: 400;
     line-height: 180%;
     letter-spacing: 1.28px;
+    @include mobile {
+      font-size: 25px;
+      letter-spacing: 0;
+    }
   }
 
   &__text {
@@ -135,5 +180,10 @@
     font-weight: 400;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+
+    @include mobile {
+      font-size: 16px;
+      letter-spacing: 0;
+    }
   }
 }

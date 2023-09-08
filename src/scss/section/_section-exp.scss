@@ -2,6 +2,11 @@
   margin-top: 72px;
   margin-bottom: 192px;
 
+  @include tablet-small {
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+
   &__title {
     color: var(--c-primary);
     font-family: var(--ff);
@@ -30,8 +35,20 @@
   padding-left: 116px;
   position: relative;
 
+  @include desktop-small {
+    gap: 15px;
+    padding-left: 0;
+  }
+
+  @include tablet-small {
+    grid-template-columns: 1fr;
+  }
+
   &:not(:last-child) {
     margin-bottom: 158px;
+    @include tablet-small {
+      margin-bottom: 30px;
+    }
   }
 
   &::before,
@@ -46,6 +63,10 @@
     text-transform: capitalize;
     bottom: 6px;
     position: absolute;
+
+    @include desktop-small {
+      display: none;
+    }
   }
 
   &::after {

@@ -72,6 +72,11 @@
   cursor: pointer;
   z-index: 1;
   transition: var(--transition);
+  @include mobile {
+    padding: 20px 40px;
+    font-size: 30px;
+  }
+
   &:hover {
     transform: translateY(-5px);
   }

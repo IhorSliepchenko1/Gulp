@@ -1,4 +1,4 @@
-about.section-services {
+.section-services {
   padding-top: 40px;
   padding-bottom: 40px;
   background: var(--services-bg);
@@ -10,6 +10,13 @@ about.section-services {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-right: 24px;
   gap: 40px;
+  @include desktop-small {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 }
 
 .services-item {
@@ -21,9 +28,9 @@ about.section-services {
   transition: var(--transition);
 
   &:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.065);
+    -ms-transform: scale(1.065);
+    transform: scale(1.065);
   }
 
   &__icon {

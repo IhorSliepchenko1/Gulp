@@ -7,8 +7,13 @@
     justify-content: space-between;
     padding-top: 0;
     padding-bottom: 0;
-    padding: 56px 0 56px 0;
+    padding: 56px 20px 56px 20px;
 
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     &__logo {
       text-align: center;
       color: var(--c-white);
@@ -30,10 +35,26 @@
       }
     }
 
+    &__nav {
+      display: flex;
+
+      @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+    }
     &__ul {
       display: flex;
       gap: 56px;
       align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &__a {
@@ -55,7 +76,11 @@
     &__socials {
       display: flex;
       gap: 16px;
-      margin-left: calc(276px - 56px);
+      margin-left: 276px;
+
+      @include tablet {
+        margin-left: 0;
+      }
 
       img {
         &.social-icon {

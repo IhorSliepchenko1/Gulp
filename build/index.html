@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
@@ -65,10 +72,10 @@
 </header>
  <section class="section-main container">
   <div class="section-main__content">
-    <div class="developer">
+    <div data-aos="fade-down-left" class="developer">
       <img src="img/developer.png" alt="developer" />
     </div>
-    <div class="cv">
+    <div data-aos="zoom-in-down" class="cv">
       <p class="cv__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet,
@@ -112,8 +119,10 @@
     </div>
   </div>
   <div class="section-main__info">
-    <h1 class="section-main__title">Empower your ideas with our innovative</h1>
-    <div class="section-main__btn">
+    <h1 class="section-main__title scale-in-center">
+      Empower your ideas with our innovative
+    </h1>
+    <div class="section-main__btn scale-in-center">
       <button
         class="btn btn-solution"
         id="btnSolution"
@@ -151,38 +160,38 @@
 
     <div class="section-main__skills skills">
       <div class="skills-ach">
-        <div class="skills-ach__item">
+        <div class="skills-ach__item scale-in-center">
           <p class="skills-ach__count">+8</p>
           <h3 class="skills-ach__title">year of experience</h3>
         </div>
 
-        <div class="skills-ach__item">
+        <div class="skills-ach__item scale-in-center">
           <p class="skills-ach__count">+100</p>
           <h3 class="skills-ach__title">complete Project</h3>
         </div>
 
-        <div class="skills-ach__item">
+        <div class="skills-ach__item scale-in-center">
           <p class="skills-ach__count">+100</p>
           <h3 class="skills-ach__title">client satisfied</h3>
         </div>
       </div>
       <div class="skills-tech">
-        <div class="skills-tech__item">
+        <div class="skills-tech__item scale-in-center">
           <img src="img/skills/angular.png" alt="angular" />
         </div>
-        <div class="skills-tech__item">
+        <div class="skills-tech__item scale-in-center">
           <img src="img/skills/css.png" alt="css" />
         </div>
-        <div class="skills-tech__item">
+        <div class="skills-tech__item scale-in-center">
           <img src="img/skills/html.png" alt="html" />
         </div>
-        <div class="skills-tech__item">
+        <div class="skills-tech__item scale-in-center">
           <img src="img/skills/js.png" alt="js" />
         </div>
-        <div class="skills-tech__item">
+        <div class="skills-tech__item scale-in-center">
           <img src="img/skills/node.png" alt="node" />
         </div>
-        <div class="skills-tech__item">
+        <div class="skills-tech__item scale-in-center">
           <img src="img/skills/react.png" alt="react" />
         </div>
       </div>
@@ -192,7 +201,7 @@
 
       <section class="section-services">
   <div class="services container">
-    <div class="services-item">
+    <div class="services-item slit-in-vertical">
       <div class="services-item__icon">
         <img src="img/services/service-1.png" alt="1" />
       </div>
@@ -200,7 +209,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       </h3>
     </div>
-    <div class="services-item">
+    <div class="services-item slit-in-vertical">
       <div class="services-item__icon">
         <img src="img/services/service-2.png" alt="2" />
       </div>
@@ -208,7 +217,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       </h3>
     </div>
-    <div class="services-item">
+    <div class="services-item slit-in-vertical">
       <div class="services-item__icon">
         <img src="img/services/service-3.png" alt="3" />
       </div>
@@ -216,7 +225,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       </h3>
     </div>
-    <div class="services-item">
+    <div class="services-item slit-in-vertical">
       <div class="services-item__icon">
         <img src="img/services/service-4.png" alt="4" />
       </div>
@@ -228,58 +237,65 @@
 </section>
 
       <section class="section-about container">
-  <h2 class="section-about__title">About me</h2>
-  <div class="section-about__row"></div>
-  <div class="section-about__info">
-    <p class="section-about__desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
-    <div class="education">
-      <h4 class="education__header">education <span>{</span></h4>
-
-      <div class="education-item">
-        <div class="education-item__icon">.</div>
-        <p class="education-item__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
+  <div class="section-about__row">
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      class="section-about__info"
+    >
+      <div class="section-about__title">About me</div>
+      <div class="section-about__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
       </div>
+      <div class="education">
+        <div class="education__header">education <span>{</span></div>
 
-      <div class="education-item">
-        <div class="education-item__icon">#</div>
-        <div class="education-item__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
+        <div class="education-item">
+          <div class="education-item__icon">.</div>
+          <div class="education-item__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </div>
         </div>
-      </div>
 
-      <div class="education-item">
-        <div class="education-item__icon">@</div>
-        <p class="education-item__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
+        <div class="education-item">
+          <div class="education-item__icon">#</div>
+          <div class="education-item__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-item__icon">@</div>
+          <div class="education-item__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </div>
+        </div>
+        <div class="education__footer">}</div>
       </div>
-      <div class="education__footer">}</div>
     </div>
-  </div>
-  <div class="section-about__img">
-    <img src="img/about-me.png" alt="Taras Stepanenko" />
+
+    <div data-aos="zoom-in" class="section-about__img">
+      <img src="img/about-me.png" alt="Taras Stepanenko" />
+    </div>
   </div>
 </section>
 
       <section class="section-exp container">
   <h2 class="section-exp__title">*My experience & Project</h2>
-  <div class="section-exp__img">
+  <div data-aos="fade-down" class="section-exp__img">
     <img src="img/experience-bg.png" alt="coding" />
   </div>
-  <div class="exp-item">
+  <div data-aos="zoom-out-right" class="exp-item">
     <div class="exp-item__year">2016-2020</div>
     <h4 class="exp-item__title">Frontend junior in company “Unior”</h4>
     <p class="exp-item__desc">
@@ -288,7 +304,7 @@
     </p>
   </div>
 
-  <div class="exp-item">
+  <div data-aos="zoom-out-left" class="exp-item">
     <div class="exp-item__year">2020-2022</div>
     <h4 class="exp-item__title">Frontend developer in company “richmond”</h4>
     <p class="exp-item__desc">
@@ -313,7 +329,7 @@
 
   <div class="container">
     <div class="section-reviews__slider">
-      <div class="owl-carousel owl-theme">
+      <div data-aos="zoom-in-down" class="owl-carousel owl-theme">
         <div class="review-item">
           <div class="review-item__img">
             <img src="img/reviews/user-woman.png" alt="Anna, Kyiv" />
@@ -328,8 +344,12 @@
               nisi ut.
             </p>
             <div class="review-item__actions">
-              <img src="img/reviews/dislike.png" alt="dislike" class="dislike" />
-              <img src="img/reviews/like.png" alt="like" class="like"/>
+              <img
+                src="img/reviews/dislike.png"
+                alt="dislike"
+                class="dislike"
+              />
+              <img src="img/reviews/like.png" alt="like" class="like" />
             </div>
           </div>
         </div>
@@ -347,8 +367,12 @@
               nisi ut.
             </p>
             <div class="review-item__actions">
-              <img src="img/reviews/dislike.png" alt="dislike" class="dislike" />
-              <img src="img/reviews/like.png" alt="like" class="like"/>
+              <img
+                src="img/reviews/dislike.png"
+                alt="dislike"
+                class="dislike"
+              />
+              <img src="img/reviews/like.png" alt="like" class="like" />
             </div>
           </div>
         </div>
@@ -367,8 +391,12 @@
               nisi ut.
             </p>
             <div class="review-item__actions">
-              <img src="img/reviews/dislike.png" alt="dislike" class="dislike" />
-              <img src="img/reviews/like.png" alt="like" class="like"/>
+              <img
+                src="img/reviews/dislike.png"
+                alt="dislike"
+                class="dislike"
+              />
+              <img src="img/reviews/like.png" alt="like" class="like" />
             </div>
           </div>
         </div>
@@ -386,8 +414,12 @@
               nisi ut.
             </p>
             <div class="review-item__actions">
-              <img src="img/reviews/dislike.png" alt="dislike" class="dislike" />
-              <img src="img/reviews/like.png" alt="like" class="like"/>
+              <img
+                src="img/reviews/dislike.png"
+                alt="dislike"
+                class="dislike"
+              />
+              <img src="img/reviews/like.png" alt="like" class="like" />
             </div>
           </div>
         </div>
@@ -412,7 +444,12 @@
   <div class="container section-contacts__container">
     <h2 class="section-contacts__title">contacts</h2>
 
-    <div class="map">
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      class="map"
+    >
       <div class="map__img">
         <img src="img/map.png" alt="Ukraine" />
       </div>
@@ -468,34 +505,40 @@
         onclick="navToggle()"
       ></div>
       <ul class="footer-section__ul" id="footerUl">
-        <li class="footer-section__li"><a class="footer-section__a" href="/">About</a></li>
+        <li class="footer-section__li">
+          <a class="footer-section__a" href="/">About</a>
+        </li>
         <li class="footer-section__li">
           <a class="footer-section__a" href="/">experience</a>
         </li>
-        <li class="footer-section__li"><a class="footer-section__a" href="/">reviews</a></li>
-        <li class="footer-section__li"><a class="footer-section__a" href="/">contact</a></li>
+        <li class="footer-section__li">
+          <a class="footer-section__a" href="/">reviews</a>
+        </li>
+        <li class="footer-section__li">
+          <a class="footer-section__a" href="/">contact</a>
+        </li>
+      </ul>
 
-        <ul class="footer-section__socials">
-          <li class="footer-section__li">
-            <a href="/">
-              <img class="social-icon" src="img/socials/git.svg" alt="git" />
-            </a>
-          </li>
-          <li class="footer-section__li">
-            <a href="/">
-              <img class="social-icon" src="img/socials/ln.svg" alt="ln" />
-            </a>
-          </li>
-          <li class="footer-section__li">
-            <a href="/">
-              <img
-                class="social-icon"
-                src="img/socials/telegram.svg"
-                alt="telegram"
-              />
-            </a>
-          </li>
-        </ul>
+      <ul class="footer-section__socials">
+        <li class="footer-section__li">
+          <a href="/">
+            <img class="social-icon" src="img/socials/git.svg" alt="git" />
+          </a>
+        </li>
+        <li class="footer-section__li">
+          <a href="/">
+            <img class="social-icon" src="img/socials/ln.svg" alt="ln" />
+          </a>
+        </li>
+        <li class="footer-section__li">
+          <a href="/">
+            <img
+              class="social-icon"
+              src="img/socials/telegram.svg"
+              alt="telegram"
+            />
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -504,6 +547,7 @@
     </div>
 
     <script src="./js/index.bundle.ajs"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -2695,6 +2739,8 @@
     </script>
     <script src="index.js"></script>
     <script>
+      AOS.init();
+
       function navToggle() {
         document.getElementById("headerUl").classList.toggle("_active");
         document.getElementById("headerBackdrop").classList.toggle("_active");
@@ -2715,6 +2761,18 @@
           "<img src='img/arrow-left.svg' alt='arrow' />",
           "<img src='img/arrow-right.svg' alt='arrow' />",
         ],
+
+        responsive: {
+          0: {
+            items: 1,
+          },
+          480: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+        },
       });
     </script>
   </body>

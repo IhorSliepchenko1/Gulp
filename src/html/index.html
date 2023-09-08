@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
@@ -27,6 +34,7 @@
     </div>
 
     <script src="./js/index.bundle.ajs"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -2218,6 +2226,8 @@
     </script>
     <script src="index.js"></script>
     <script>
+      AOS.init();
+
       function navToggle() {
         document.getElementById("headerUl").classList.toggle("_active");
         document.getElementById("headerBackdrop").classList.toggle("_active");
@@ -2238,6 +2248,18 @@
           "<img src='img/arrow-left.svg' alt='arrow' />",
           "<img src='img/arrow-right.svg' alt='arrow' />",
         ],
+
+        responsive: {
+          0: {
+            items: 1,
+          },
+          480: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+        },
       });
     </script>
   </body>
