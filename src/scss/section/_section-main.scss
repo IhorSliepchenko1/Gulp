@@ -193,9 +193,15 @@
   }
 
   .developer {
+    text-align: center;
     img {
       max-width: 450px;
       max-height: 445px;
+
+      @include mobile {
+        max-width: 350px;
+        max-height: 345px;
+      }
     }
   }
 }
