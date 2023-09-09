@@ -44,6 +44,11 @@
     padding-left: 67px;
     padding-right: 67px;
 
+    @include tablet-small {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
     @include mobile {
       padding-left: 10px;
       padding-right: 10px;
